@@ -5,21 +5,21 @@
 // -------------------------------------
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; // Garante que padding e border não alterem o tamanho total
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // Garante que padding e border não alterem o tamanho total
 }
 
 body {
-    background-color: #F8F9FA; // Neutro, fundo claro
-    font-family: "Montserrat", sans-serif;
-    color: #333333; // Preto suave para o texto
+  background-color: #F8F9FA; // Neutro, fundo claro
+  font-family: "Montserrat", sans-serif;
+  color: #333333; // Preto suave para o texto
 }
 
 a {
-    text-decoration: none;
-    color: #FFFFFF; // Branco para links na header
-    padding: 5px;
+  text-decoration: none;
+  color: #FFFFFF; // Branco para links na header
+  padding: 5px;
 }
 
 // -------------------------------------
@@ -27,27 +27,26 @@ a {
 // -------------------------------------
 
 header {
-    background-color: #0B1736; // Azul-Marinho: Destaque principal
-    color: #FFFFFF;
+  background-color: #0B1736; // Azul-Marinho: Destaque principal
+  color: #FFFFFF;
 
-    nav {
-
-        // Semântica: usando <nav> para o menu
-        ul {
-            display: flex;
-            list-style: none;
-            justify-content: space-around;
-            padding: 20px;
-        }
+  nav { // Semântica: usando <nav> para o menu
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      padding: 20px;
     }
+  }
 
-    h1 {
-        font-family: "Gravitas One", serif;
-        font-size: 3rem;
-        text-align: center;
-        color: #FFFFFF; // Título principal da página
-        padding-bottom: 20px;
-    }
+  h1 {
+    // FONT TEMÁTICA: Bebas Neue para o título principal (efeito cinema/pôster)
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 3.5rem; // Tamanho ajustado para maior impacto
+    text-align: center;
+    color: #FFFFFF; // Título principal da página
+    padding-bottom: 20px;
+  }
 }
 
 // -------------------------------------
@@ -55,34 +54,34 @@ header {
 // -------------------------------------
 
 main {
-    .banner {
-        // URL da imagem removida para simplificar (substituir por link válido)
-        background-image: url("https://img.freepik.com/vetores-gratis/cartaz-de-tempo-de-filme-de-cinema-horizontal-realista-com-carretel-de-badalo-de-bilhetes-de-lanches-de-oculos-3d-em-fundo-azul-com-ilustracao-vetorial-bokeh_1284-77013.jpg");
-        height: 40vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+  .banner {
+    // URL da imagem removida para simplificar (substituir por link válido)
+    background-image: url("https://img.freepik.com/vetores-gratis/cartaz-de-tempo-de-filme-de-cinema-horizontal-realista-com-carretel-de-badalo-de-bilhetes-de-lanches-de-oculos-3d-em-fundo-azul-com-ilustracao-vetorial-bokeh_1284-77013.jpg"); 
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .sessoes {
+    padding: 30px 20px;
+
+    h2 { // Título da sessão (ex: Tobey Maguire)
+      // FONT TEMÁTICA: Bebas Neue para o título da seção
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 2.5rem;
+      color: #0B1736;
+      margin-bottom: 10px;
+      text-align: center;
     }
 
-    .sessoes {
-        padding: 30px 20px;
-
-        h2 {
-            // Título da sessão (ex: Sessão Homem-Aranha)
-            font-size: 2rem;
-            color: #0B1736;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        p {
-            // Descrição da sessão
-            font-size: 1.2rem;
-            color: #333333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+    p { // Descrição da sessão
+      font-size: 1.2rem;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 20px;
     }
+  }
 }
 
 // -------------------------------------
@@ -90,18 +89,17 @@ main {
 // -------------------------------------
 
 .carrossel__container {
-    display: flex;
-    overflow-x: scroll; // Habilita a rolagem horizontal
-    padding: 10px 20px;
-    gap: 20px; // Espaço entre os cards
-
-    // Esconder a barra de rolagem (Webkit browsers)
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    -ms-overflow-style: none; // Para Internet Explorer/Edge
-    scrollbar-width: none; // Para Firefox
+  display: flex;
+  overflow-x: scroll; // Habilita a rolagem horizontal
+  padding: 10px 20px;
+  gap: 20px; // Espaço entre os cards
+  
+  // Esconder a barra de rolagem (Webkit browsers)
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; // Para Internet Explorer/Edge
+  scrollbar-width: none; // Para Firefox
 }
 
 // -------------------------------------
@@ -109,49 +107,49 @@ main {
 // -------------------------------------
 
 .card {
-    min-width: 250px; // Garante que o card não encolha demais
-    max-width: 300px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); // Sombra sutil para destaque
-    flex-shrink: 0; // CRUCIAL: Impede que o card encolha e força a rolagem
-    padding: 15px;
-    text-align: center;
+  min-width: 250px; // Garante que o card não encolha demais
+  max-width: 300px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); // Sombra sutil para destaque
+  flex-shrink: 0; // CRUCIAL: Impede que o card encolha e força a rolagem
+  padding: 15px;
+  text-align: center;
 
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 6px;
-        margin-bottom: 10px;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  h3 { // Usando <h3> para título do filme (semântica)
+    font-family: "Bebas Neue", sans-serif; // Fonte temática para o título do filme
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333333;
+  }
 
-    h3 {
-        // Usando <h3> para título do filme (semântica)
-        font-weight: 600;
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-        color: #333333;
-    }
+  // Agrupamento dos botões (Flexbox interno)
+  .card__botoes-acao {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
 
-    // Agrupamento dos botões (Flexbox interno)
-    .card__botoes-acao {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    // O botão usa 100% do espaço, mas o container flexbox ajusta
-    button {
-        width: 100%;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        font-weight: 700;
-        transition: background-color 0.3s ease;
-    }
+  // O botão usa 100% do espaço, mas o container flexbox ajusta
+  button {
+    width: 100%; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
 }
 
 // -------------------------------------
@@ -160,21 +158,21 @@ main {
 
 /* Botão Principal: Vermelho-Aranha */
 .btn-primario {
-    background-color: #C21818;
-    color: #FFFFFF;
-
-    &:hover {
-        background-color: #E03D3D;
-    }
+  background-color: #C21818; 
+  color: #FFFFFF; 
+  
+  &:hover {
+    background-color: #E03D3D; 
+  }
 }
 
 /* Botão Secundário: Neutro/Azul-Marinho */
 .btn-secundario {
-    background-color: #FFFFFF;
-    color: #0B1736;
-    border: 1px solid #0B1736;
-
-    &:hover {
-        background-color: #F0F0F0;
-    }
+  background-color: #FFFFFF; 
+  color: #0B1736;
+  border: 1px solid #0B1736; 
+  
+  &:hover {
+    background-color: #F0F0F0;
+  }
 }

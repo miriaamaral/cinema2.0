@@ -28,8 +28,8 @@ header nav ul {
   padding: 20px;
 }
 header h1 {
-  font-family: "Gravitas One", serif;
-  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
   text-align: center;
   color: #FFFFFF;
   padding-bottom: 20px;
@@ -46,7 +46,8 @@ main .sessoes {
   padding: 30px 20px;
 }
 main .sessoes h2 {
-  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
   color: #0B1736;
   margin-bottom: 10px;
   text-align: center;
@@ -87,8 +88,9 @@ main .sessoes p {
   margin-bottom: 10px;
 }
 .card h3 {
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   color: #333333;
 }
