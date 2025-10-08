@@ -64,8 +64,6 @@ main .sessoes p {
   overflow-x: scroll;
   padding: 10px 20px;
   gap: 20px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .card {
